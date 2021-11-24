@@ -106,20 +106,22 @@ public class Main {
         } while (isInvalid);
 
         // update board
+        // split String `board` to char array called chars
         char[] chars = board.toCharArray();
+        // update array with move made by player
         chars[index] = player;
+        // concatenate char array to string and
+        // put back to String `board`
         board = String.valueOf(chars);
-        System.out.println(board);
         printBoard(board);
-
     }
 
     // the main method 😅
     public static void main(String[] args) {
         // write your code here
+            printBoard(board);
         do {
 
-            printBoard(board);
             getCoordinates(player);
             countXetO(board);
             checkRows(board);
@@ -140,6 +142,7 @@ public class Main {
                 gameFinished = true;
             } else if (numOfX + numOfO == 9) {
                 System.out.println("Draw");
+                gameFinished = true;
             }
 
             // set next player to take a turn
