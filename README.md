@@ -1,7 +1,7 @@
 # mgTicTacToe
 
-A simple text based tic tac toe game
-It's code I wrote for a JetBrains Academy project
+A simple text based tic tac toe game.  
+It's code I wrote for a JetBrains Academy project.
 
 ## Instructions
 - X plays first
